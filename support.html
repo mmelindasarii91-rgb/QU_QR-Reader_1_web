@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Поддержка и помощь по приложению QU QR Reader">
+    <title>Поддержка - QU QR Reader</title>
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/app-icon.png" type="image/png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-qr-code-scan text-primary me-2"></i>QU QR Reader
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="support.html">Поддержка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terms.html">Условия использования</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="privacy.html">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-info text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-3">
+                        <i class="bi bi-headset me-3"></i>Поддержка
+                    </h1>
+                    <p class="lead mb-0">
+                        Мы здесь, чтобы помочь вам получить максимум от QU QR Reader
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Help -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">Быстрая помощь</h2>
+                <p class="lead text-muted">Найдите ответы на популярные вопросы</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="help-icon bg-primary bg-opacity-10 rounded-circle p-3 mb-3 mx-auto">
+                                <i class="bi bi-camera text-primary fs-2"></i>
+                            </div>
+                            <h5 class="card-title">Как сканировать QR-код?</h5>
+                            <p class="card-text text-muted">
+                                Откройте приложение, наведите камеру на QR-код и он автоматически распознается
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="help-icon bg-success bg-opacity-10 rounded-circle p-3 mb-3 mx-auto">
+                                <i class="bi bi-plus-square text-success fs-2"></i>
+                            </div>
+                            <h5 class="card-title">Как создать QR-код?</h5>
+                            <p class="card-text text-muted">
+                                Нажмите кнопку "Создать", выберите тип контента и введите необходимую информацию
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="help-icon bg-warning bg-opacity-10 rounded-circle p-3 mb-3 mx-auto">
+                                <i class="bi bi-shield-check text-warning fs-2"></i>
+                            </div>
+                            <h5 class="card-title">Безопасность данных</h5>
+                            <p class="card-text text-muted">
+                                Все данные хранятся только на вашем устройстве и никуда не передаются
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-6 fw-bold text-center mb-5">Часто задаваемые вопросы</h2>
+                    
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq1">
+                                    Не работает камера. Что делать?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Проверьте разрешения:</strong></p>
+                                    <ol>
+                                        <li>Откройте Настройки iOS</li>
+                                        <li>Найдите QU QR Reader</li>
+                                        <li>Убедитесь, что доступ к камере разрешен</li>
+                                        <li>Перезапустите приложение</li>
+                                    </ol>
+                                    <p>Если проблема остается, попробуйте перезагрузить устройство.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq2">
+                                    Как удалить историю сканирований?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Удаление отдельных записей:</strong></p>
+                                    <ul>
+                                        <li>Откройте раздел "История"</li>
+                                        <li>Свайпните влево по записи</li>
+                                        <li>Нажмите "Удалить"</li>
+                                    </ul>
+                                    <p><strong>Очистка всей истории:</strong></p>
+                                    <ul>
+                                        <li>Перейдите в Настройки приложения</li>
+                                        <li>Нажмите "Очистить всю историю"</li>
+                                        <li>Подтвердите действие</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq3">
+                                    Какие форматы QR-кодов поддерживаются?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>QU QR Reader поддерживает:</strong></p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6 class="fw-semibold">QR-коды:</h6>
+                                            <ul>
+                                                <li>Обычный текст</li>
+                                                <li>URL ссылки</li>
+                                                <li>Контакты (vCard)</li>
+                                                <li>Wi-Fi настройки</li>
+                                                <li>События календаря</li>
+                                                <li>Геолокация</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6 class="fw-semibold">Штрих-коды:</h6>
+                                            <ul>
+                                                <li>EAN-13</li>
+                                                <li>EAN-8</li>
+                                                <li>UPC-A</li>
+                                                <li>Code 128</li>
+                                                <li>Code 39</li>
+                                                <li>ITF</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq4">
+                                    Приложение работает без интернета?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Да, полностью офлайн!</strong></p>
+                                    <p>QU QR Reader не требует подключения к интернету для:</p>
+                                    <ul>
+                                        <li>Сканирования QR-кодов и штрих-кодов</li>
+                                        <li>Создания новых QR-кодов</li>
+                                        <li>Просмотра истории сканирований</li>
+                                        <li>Сохранения данных</li>
+                                    </ul>
+                                    <p class="text-muted">
+                                        <i class="bi bi-info-circle me-2"></i>
+                                        Интернет потребуется только для открытия URL-ссылок из отсканированных кодов.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq5">
+                                    Как поделиться созданным QR-кодом?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>После создания QR-кода:</strong></p>
+                                    <ol>
+                                        <li>Нажмите кнопку "Поделиться" под кодом</li>
+                                        <li>Выберите способ отправки:
+                                            <ul>
+                                                <li>Сохранить в фотогалерею</li>
+                                                <li>Отправить по email</li>
+                                                <li>Поделиться в мессенджере</li>
+                                                <li>Отправить в социальные сети</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                    <p class="text-success">
+                                        <i class="bi bi-check-circle me-2"></i>
+                                        Также можно найти все созданные коды в разделе "История".
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq6">
+                                    Приложение не распознает QR-код. Что делать?
+                                </button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Попробуйте следующее:</strong></p>
+                                    <ul>
+                                        <li><strong>Освещение:</strong> Убедитесь, что код хорошо освещен</li>
+                                        <li><strong>Расстояние:</strong> Попробуйте приблизиться или отдалиться</li>
+                                        <li><strong>Угол:</strong> Держите устройство перпендикулярно коду</li>
+                                        <li><strong>Стабильность:</strong> Держите устройство неподвижно</li>
+                                        <li><strong>Качество кода:</strong> Проверьте, не поврежден ли код</li>
+                                    </ul>
+                                    <p class="text-info">
+                                        <i class="bi bi-lightbulb me-2"></i>
+                                        Включите фонарик в приложении для лучшего освещения.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-6 fw-bold mb-4">Свяжитесь с нами</h2>
+                    <p class="lead text-muted mb-5">
+                        Не нашли ответ на свой вопрос? Мы готовы помочь!
+                    </p>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-primary">
+                                <div class="card-body text-center p-4">
+                                    <i class="bi bi-envelope text-primary display-6 mb-3"></i>
+                                    <h5 class="card-title">Email поддержка</h5>
+                                    <p class="card-text text-muted">
+                                        Напишите нам на почту для получения подробной помощи
+                                    </p>
+                                    <a href="mailto:support@qureader.com" class="btn btn-primary">
+                                        support@qureader.com
+                                    </a>
+                                    <p class="small text-muted mt-2 mb-0">
+                                        Ответим в течение 24 часов
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card h-100 border-success">
+                                <div class="card-body text-center p-4">
+                                    <i class="bi bi-star text-success display-6 mb-3"></i>
+                                    <h5 class="card-title">Оценить в App Store</h5>
+                                    <p class="card-text text-muted">
+                                        Помогите улучшить приложение, оставив отзыв
+                                    </p>
+                                    <a href="#" class="btn btn-success">
+                                        Оценить приложение
+                                    </a>
+                                    <p class="small text-muted mt-2 mb-0">
+                                        Ваше мнение важно для нас
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <div class="card bg-info bg-opacity-10 border-info">
+                            <div class="card-body p-4">
+                                <h6 class="card-title text-info">
+                                    <i class="bi bi-clock me-2"></i>Время ответа
+                                </h6>
+                                <p class="card-text mb-0">
+                                    Мы стараемся отвечать на все вопросы в течение 24 часов. 
+                                    В выходные дни время ответа может увеличиться до 48 часов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Requirements -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="h4 fw-bold text-center mb-4">Системные требования</h2>
+                    
+                    <div class="card border-0 bg-light">
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+                                    <div>
+                                        <strong>iOS 13.0</strong> или новее
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+                                    <div>
+                                        <strong>Устройства:</strong> iPhone, iPad, iPod touch
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+                                    <div>
+                                        <strong>Камера:</strong> Доступ к основной камере
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-3 fs-5"></i>
+                                    <div>
+                                        <strong>Место:</strong> ~50 MB свободного пространства
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center mb-0">
+                                    <i class="bi bi-wifi-off text-muted me-3 fs-5"></i>
+                                    <div>
+                                        <strong>Интернет:</strong> Не требуется для основных функций
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="bi bi-qr-code-scan me-2"></i>QU QR Reader
+                    </h5>
+                    <p class="text-light mb-4">
+                        Универсальный сканер QR-кодов и штрих-кодов для iOS. 
+                        Быстро, удобно, безопасно.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="mb-3">Поддержка</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="mailto:support@qureader.com" class="text-light text-decoration-none">
+                                <i class="bi bi-envelope me-2"></i>support@qureader.com
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <span class="text-light">
+                                <i class="bi bi-clock me-2"></i>Ответ в течение 24 часов
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="mb-3">Полезные ссылки</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-light text-decoration-none">Главная</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="terms.html" class="text-light text-decoration-none">Условия использования</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="privacy.html" class="text-light text-decoration-none">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 QU QR Reader. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">
+                        Bundle ID: com.qr.code.reader.barcode.scaner
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
