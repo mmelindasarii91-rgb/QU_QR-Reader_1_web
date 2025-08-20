@@ -80,7 +80,7 @@
                 
                 if (navigator.clipboard) {
                     navigator.clipboard.writeText(email).then(() => {
-                        showToast('Email адрес скопирован: ' + email);
+                        showToast('Email address copied: ' + email);
                     }).catch(() => {
                         // Fallback for older browsers
                         copyToClipboardFallback(email);
@@ -105,9 +105,9 @@
         
         try {
             document.execCommand('copy');
-            showToast('Email адрес скопирован: ' + text);
+            showToast('Email address copied: ' + text);
         } catch (err) {
-            console.error('Не удалось скопировать текст: ', err);
+            console.error('Failed to copy text: ', err);
         }
         
         document.body.removeChild(textArea);
@@ -184,10 +184,10 @@
                 });
                 
                 if (isValid) {
-                    showToast('Сообщение отправлено! Мы свяжемся с вами в ближайшее время.');
+                    showToast('Message sent! We will contact you shortly.');
                     form.reset();
                 } else {
-                    showToast('Пожалуйста, заполните все обязательные поля.', 'error');
+                    showToast('Please fill in all required fields.', 'error');
                 }
             });
         });
@@ -293,11 +293,11 @@
 
         // Handle offline/online status
         window.addEventListener('offline', () => {
-            showToast('Соединение с интернетом потеряно. Некоторые функции могут быть недоступны.', 'error');
+            showToast('Internet connection lost. Some functions may be unavailable.', 'error');
         });
 
         window.addEventListener('online', () => {
-            showToast('Соединение с интернетом восстановлено.');
+            showToast('Internet connection restored.');
         });
     }
 
@@ -306,7 +306,7 @@
         // Skip link for keyboard users
         const skipLink = document.createElement('a');
         skipLink.href = '#main-content';
-        skipLink.textContent = 'Перейти к основному содержанию';
+        skipLink.textContent = 'Skip to main content';
         skipLink.className = 'visually-hidden-focusable position-absolute';
         skipLink.style.cssText = `
             top: 10px;
